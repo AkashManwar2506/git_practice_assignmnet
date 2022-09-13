@@ -1,11 +1,17 @@
 //Problem 2 : Check whether a string is palindrome or not.
 
 let str = "racecarer";
-let flag = "Not a Palindrome"
+let flag ="";
 
-for (i = 0; i < str.length / 2; i++) {
-  if (str[i] == str[str.length - 1]) {
-    flag = "Yes. It is a palindrome."
-  }
+for (i =str.length-1; i>=0; i--) {
+  flag+=str[i];
+   
+} 
+if(flag===str)
+{
+console.log(" string is a palindrome");
 }
-console.log(flag);
+else
+{
+console.log("string is not  a palindrome");
+}
